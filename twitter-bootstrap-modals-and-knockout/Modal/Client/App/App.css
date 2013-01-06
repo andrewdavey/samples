@@ -1,0 +1,9 @@
+﻿.note.important {
+    color: #a00;
+    font-weight: bold;
+}
+
+.modal textarea {
+    width: 100%;
+    box-sizing: border-box;
+}

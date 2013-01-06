@@ -1,0 +1,16 @@
+﻿@{
+    Bundles.Reference("Client/Shared");
+    Bundles.Reference("Client/App");
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        @Bundles.RenderStylesheets()
+    </head>
+    <body>
+        <div class="container" data-bind="template: 'App'">Loading...</div>
+        @Bundles.RenderHtmlTemplates()
+        @Bundles.RenderScripts()
+    </body>
+</html>
