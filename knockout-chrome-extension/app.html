@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="app.css" rel="stylesheet"/>
+  </head>
+  <body data-bind="click: anyClick">
+    <ul data-bind="foreach: links">
+      <li><a data-bind="text: title, attr: { href: url }"></a></li>
+    </ul>
+    <script src="knockout.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
