@@ -135,8 +135,12 @@
     <Content Include="Client\App\App.html" />
     <Content Include="Client\App\AppViewModel.js" />
     <Content Include="Client\App\AddNote.html" />
+    <Content Include="Client\App\EditNote.html" />
+    <Content Include="Client\App\EditNoteViewModel.js" />
+    <Content Include="Client\App\NoteViewModel.js" />
     <Content Include="Client\App\_start.js" />
     <Content Include="Client\Shared\jquery.js" />
+    <Content Include="Client\Shared\knockout.mapping-latest.debug.js" />
     <Content Include="Client\Shared\utils\showModal.js" />
     <Content Include="Client\Shared\ScriptBundle.txt" />
     <Content Include="Client\Shared\twitter-bootstrap\img\glyphicons-halflings-white.png" />

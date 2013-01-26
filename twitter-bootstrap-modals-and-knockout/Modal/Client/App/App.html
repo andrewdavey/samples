@@ -1,7 +1,10 @@
 ﻿<h1>Demo Application</h1>
 
 <ul data-bind="foreach: notes">
-    <li class="note" data-bind="text: text, css: { important: important }"></li>
+    <li class="note" data-bind="css: { important: important }">
+        <span data-bind="text: text"></span>
+        <a href="#" data-bind="click: edit">Edit</a>
+    </li>
 </ul>
 
 <div>

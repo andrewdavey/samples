@@ -9,7 +9,7 @@
     // Imports
     var showModal = utils.showModal;
     var AddNoteViewModel = app.AddNoteViewModel;
-
+    var NoteViewModel = app.NoteViewModel;
 
     // The root view model for the application
     var AppViewModel = function() {
@@ -23,8 +23,8 @@
         }).then(this._addNoteToNotes);
     };
 
-    AppViewModel.prototype._addNoteToNotes = function(newNote) {
-        this.notes.push(newNote);
+    AppViewModel.prototype._addNoteToNotes = function(newNoteData) {
+        this.notes.push(new NoteViewModel(newNoteData));
     };
 
 

@@ -1,0 +1,25 @@
+﻿<div class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" aria-hidden="true" data-bind="click: cancel">&times;</button>
+        <h3>Edit Note</h3>
+    </div>
+    <div class="modal-body">
+        <form action="#" data-bind="submit: save">
+            <div class="control-group">
+                <label class="control-label">New note:</label>
+                <div class="controls">
+                    <textarea data-bind="value: text"></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox"><input type="checkbox" data-bind="checked: important" />Important</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn btn-primary" data-bind="click: save">Save</a>
+        <a href="#" class="btn" data-bind="click: cancel">Cancel</a>
+    </div>
+</div>
