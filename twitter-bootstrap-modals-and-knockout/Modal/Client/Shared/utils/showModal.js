@@ -103,7 +103,9 @@
         // so this is the right time to remove the UI element.
         $ui.on("hidden", function () {
             // Call ko.cleanNode before removal to prevent memory leaks.
-            $ui.each(ko.cleanNode);
+            $ui.each(function(index, element) {
+                ko.cleanNode(element);
+            });
             $ui.remove();
         });
     };
