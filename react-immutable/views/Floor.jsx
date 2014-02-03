@@ -25,8 +25,7 @@ var Floor = React.createClass({
 
   handleFloorClick: function(e) {
     e.preventDefault();
-    commandDispatcher.dispatch({
-      type: "addRoom",
+    commandDispatcher.dispatch("addRoom", {
       floorId: this.props.floorId
     });
     return false;

@@ -25,8 +25,7 @@ var Room = React.createClass({
     e.preventDefault();
     // We'd like to change the app's data.
     // So dispatch a command.
-    commandDispatcher.dispatch({
-      type: "switchLight",
+    commandDispatcher.dispatch("switchLight", {
       roomId: this.props.roomId,
       light_on: !this.props.room.light_on
     });

@@ -28,8 +28,7 @@ var Building = React.createClass({
 
   handleAddFloorClick: function(e) {
     e.preventDefault();
-    commandDispatcher.dispatch({
-      type: "addFloor",
+    commandDispatcher.dispatch("addFloor", {
       buildingId: this.props.buildingId
     });
     return false;

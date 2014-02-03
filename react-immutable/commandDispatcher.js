@@ -1,18 +1,18 @@
 var handlers = [];
 
-exports.dispatch = function(command) {
+exports.dispatch = function(commandId, commandData) {
   handlers
-    .filter(function(h) { return h.type === command.type; })
+    .filter(function(h) { return h.id === commandId; })
     .forEach(function(h) {
-      h.handler(command);
+      h.handler(commandData);
     });
 };
 
-exports.handle = function(newHandlers) {
-  Object.keys(newHandlers).forEach(function(commandName) {
+exports.on = function(newHandlers) {
+  Object.keys(newHandlers).forEach(function(commandId) {
     handlers.push({
-      type: commandName,
-      handler: newHandlers[commandName]
+      id: commandId,
+      handler: newHandlers[commandId]
     });
   });
 };

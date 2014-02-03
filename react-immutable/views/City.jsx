@@ -27,9 +27,7 @@ var City = React.createClass({
 
   addBuilding: function(e) {
     e.preventDefault();
-    commandDispatcher.dispatch({
-      type: "addBuilding"
-    });
+    commandDispatcher.dispatch("addBuilding");
     return false;
   }
 });

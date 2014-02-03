@@ -20,7 +20,7 @@ var app = new App(
 // to the application's data.
 // Handle these commands here, updating the application.
 // A real app would probably communicate with a back-end here too.
-commandDispatcher.handle({
+commandDispatcher.on({
   switchLight: function(command) {
     var ids = command.roomId;
     app.update(
