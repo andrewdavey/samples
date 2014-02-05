@@ -6,7 +6,7 @@ var Room = React.createClass({
   shouldComponentUpdate: function(nextProps, nextState) {
     // We have no state, and props are immutable, so can make this
     // "should update" test really efficient.
-    return nextProps !== this.props;
+    return nextProps.room !== this.props.room;
   },
 
   render: function() {

@@ -5,7 +5,7 @@ var commandDispatcher = require("../commandDispatcher");
 
 var Floor = React.createClass({
   shouldComponentUpdate: function(nextProps, nextState) {
-    return nextProps !== this.props;
+    return nextProps.floor !== this.props.floor;
   },
 
   render: function() {

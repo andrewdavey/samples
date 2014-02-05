@@ -5,7 +5,7 @@ var commandDispatcher = require("../commandDispatcher");
 
 var Building = React.createClass({
   shouldComponentUpdate: function(nextProps, nextState) {
-    return nextProps !== this.props;
+    return nextProps.building !== this.props.building;
   },
 
   render: function() {

@@ -11,7 +11,7 @@
   "dependencies": {
     "envify": "~0.2.0",
     "react": "~0.8.0",
-    "immutable-object": "0.0.2"
+    "immutable-object": "0.0.3"
   },
   "devDependencies": {
     "gulp": "~3.5.0",
